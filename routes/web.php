@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.home');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login.member');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register.member');
+
+Route::get('/forgot-password', function () {
+    return view('auth.forgot');
+})->name('forgot.password');
+
+Route::get('/reset-password', function () {
+    return view('auth.reset');
+})->name('reset.password');

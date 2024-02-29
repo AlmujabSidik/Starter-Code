@@ -42,7 +42,7 @@ class AuthServiceProvider extends ServiceProvider
             if ($user->role == 'superadmin') {
                 return true;
             }
-        })
+        });
 
         foreach (self::$permission as $action => $roles) {
             Gate::define($action, function (User $user) use ($roles) {

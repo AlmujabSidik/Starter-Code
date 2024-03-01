@@ -19,6 +19,8 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Super Admin',
             'email' => 'superadmin@localhost.com',
+            'bio' => 'Akun untuk manajemen aplikasi',
+            'phone' => '081234567890',
             'email_verified_at' => now(),
             'role' => 'superadmin',
             'password' => Hash::make('password'),
@@ -27,6 +29,8 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Admin',
             'email' => 'admin@localhost.com',
+            'bio' => 'Akun untuk manajemen aplikasi',
+            'phone' => '081234567890',
             'email_verified_at' => now(),
             'role' => 'admin',
             'password' => Hash::make('password'),

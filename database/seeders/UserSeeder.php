@@ -14,12 +14,13 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(3)->create();
+        User::factory(5)->create();
 
         User::create([
             'name' => 'Super Admin',
             'email' => 'superadmin@localhost.com',
             'bio' => 'Akun untuk manajemen aplikasi',
+            'occupation' => 'Backend Developer',
             'phone' => '081234567890',
             'email_verified_at' => now(),
             'role' => 'superadmin',
@@ -30,6 +31,7 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@localhost.com',
             'bio' => 'Akun untuk manajemen aplikasi',
+            'occupation' => 'Backend Developer',
             'phone' => '081234567890',
             'email_verified_at' => now(),
             'role' => 'admin',
